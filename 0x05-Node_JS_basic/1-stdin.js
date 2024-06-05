@@ -10,8 +10,6 @@ process.stdin.on('readable', () => {
   if (chunk) {
     // Write a response to the console, including the user's input
     process.stdout.write(`Your name is: ${chunk}`);
-    // Close the input stream to prevent further input
-    process.stdin.destroy();
   }
 });
 
